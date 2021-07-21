@@ -1,0 +1,131 @@
+<!--Author: Dharani Pandya-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Search Form for Bicycle</title>
+</head>
+
+
+
+<body>
+  <!-- Line 15 Modified by Shan He, Yao Zhou for Front-end interaction-->
+  <form action="searchResults.php" method="GET">
+    <div>
+      <label for="year">Year:</label>
+      <select id="year" name="year">
+        <option value="2020">2020</option>
+      </select>
+    </div><br>
+
+    <!-- Radio buttons are added by Yao Zhou -->
+    <!-- Line 25 to Line 132 Modified by Sachita Patel & Dharani Pandya-->
+    <!-- Line 46 to Line 74 Modified by Yao Zhou-->
+
+    <div>
+      <label for="type">Type:</label>
+      <select id="type" name="type">
+        <option value="CC">Cyclo-cross</option>
+        <option value="CA">Cargo</option>
+        <option value="CR">Cruiser</option>
+        <option value="FO">Folding</option>
+        <option value="H">Hybrid</option>
+        <option value="M">Mountain</option>
+        <option value="RE">Recumbent</option>
+        <option value="R">Road</option>
+        <option value="TA">Tandem</option>
+        <option value="TK">Track</option>
+        <option value="Trike">Trike</option>
+        <option value="All">All Types</option>
+      </select>
+    </div><br>
+
+
+    <div>
+      <label for="subtype[]">Sub Type:</label>
+      <input type="checkbox" value="" name="subtype[]">None
+      <input type="checkbox" value="CG" name="subtype[]">Cruiser Geared
+      <input type="checkbox" value="CSS" name="subtype[]">Cruiser Single Speed
+      <input type="checkbox" value="H" name="subtype[]">Hybrid
+      <input type="checkbox" value="HC" name="subtype[]">Comfort
+      <input type="checkbox" value="HP" name="subtype[]">Performance
+      <input type="checkbox" value="HU" name="subtype[]">Urban
+      <input type="checkbox" value="MDH" name="subtype[]">Downhill/Freeride
+      <input type="checkbox" value="ME" name="subtype[]"> Enduro/All Mountain
+      <input type="checkbox" value="MFAT" name="subtype[]">Fat Bike
+      <input type="checkbox" value="MJ" name="subtype[]">Juvenile/Kids
+      <input type="checkbox" value="MX" name="subtype[]">Cross Country
+      <input type="checkbox" value="M29" name="subtype[]">29" Wheel
+      <input type="checkbox" value="M650" name="subtype[]">27.5" Wheel
+      <input type="checkbox" value="RE" name="subtype[]">Endurance
+      <input type="checkbox" value="RG" name="subtype[]">Gravel
+      <input type="checkbox" value="RJ" name="subtype[]">Juvenile/Kids
+      <input type="checkbox" value="RR" name="subtype[]">Race/Performance
+      <input type="checkbox" value="RT" name="subtype[]">Touring
+      <input type="checkbox" value="RTR" name="subtype[]">Triathlon
+      <input type="checkbox" value="RTT" name="subtype[]">Time Trial
+      <input type="checkbox" value="HTA " name="subtype[]">Hybrid Tandem
+      <input type="checkbox" value="MTA " name="subtype[]">Mountain Tandem
+      <input type="checkbox" value="RTA" name="subtype[]">Road Tandem
+      <input type="checkbox" value="WS" name="subtype[]">Women Special
+      </select>
+    </div><br>
+
+
+    <div>
+      <label for="electric">Electric:</label>
+      <input type="radio" value="y" id="electric_yes" name="electric">Yes
+      <input type="radio" value="n" id="electric_no" name="electric">No
+    </div><br>
+    <div>
+      <label for="material">Frame:</label>
+      <select id="material" name="frame">
+        <option value="composite">Carbon</option>
+        <option value="AL">Alloy</option>
+        <option value="Steel">Steel</option>
+        <option value="Ti">Titanium</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="size">Size:</label>
+      <select id="size" name="size">
+        <option value="XXS">XXS</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+        <option value="OS">One size</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="front_suspension">Front Suspension:</label>
+      <input type="radio" value="y" id="front_yes" name="front_suspension">Yes
+      <input type="radio" value="n" id="front_no" name="front_suspension">No
+    </div><br>
+    <div>
+      <label for="rear_suspension">Rear Suspension:</label>
+      <input type="radio" value="y" id="rear_yes" name="rear_suspension">Yes
+      <input type="radio" value="n" id="rear_no" name="rear_suspension">No
+
+    </div><br>
+
+    <!-- Line 132 Modified by Sachita Patel & Dharani Pandya-->
+    <div>
+      <label for="price">Highest Price:</label>
+      <input type="text" id="price" name="price"/> 
+
+    </div><br>
+
+
+    <div>
+      <input type="submit" id="showResult" value="Search" />
+    </div>
+
+  </form>
+</body>
+
+</html>
